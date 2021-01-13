@@ -65,4 +65,4 @@ function delegateTasks(tasks, team, round){
     },12000);
     clearTimeout();
 }
-delegateTasks(75, 12);
+delegateTasks(75, 3);
