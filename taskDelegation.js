@@ -30,7 +30,7 @@ function delegateTasks(tasks, team, round){
         }
         tasksCompleted+= score;
     }
-    setTimeout(()=>{console.log('\nPlease wait, teamates are working...\n');},4000);
+    setTimeout(()=>{console.log('\nPlease wait, teammates are working...\n');},4000);
     clearTimeout();
     setTimeout(()=>{
         console.log(`******Member stats******${taskStats}${'\n'}`);
@@ -45,8 +45,8 @@ function delegateTasks(tasks, team, round){
     clearTimeout();
     setTimeout(()=>{
         if (tasks-tasksCompleted === 0){
-            const plural= ()=>{console.log(`Congratgulations teamates! you completed all of the tasks in ${round} rounds!`);};
-            const singular= ()=>{console.log(`Congratgulations teamates! you completed all of the tasks in ${round} round! I bet you couldn't do that twice!`);};
+            const plural= ()=>{console.log(`Congratulations teammates! you completed all of the tasks in ${round} rounds!`);};
+            const singular= ()=>{console.log(`Congratulations teammates! you completed all of the tasks in ${round} round! I bet you couldn't do that twice!`);};
             if (round===1){
                 return singular();
             }else{
